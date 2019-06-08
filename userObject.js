@@ -6,8 +6,7 @@ var object = [
     place: "Riviera State",
     twitter: "Twitter, Inc",
     description: "795 Folsom Ave, Suite 600 San Francisco, CA 94107",
-    Telephon: "(123) 456-7890",
-    delete: "Delet Button"
+    Telephon: "(123) 456-7890"
   },
   {
     img: "imgs/alex-jonathan.jpg",
@@ -16,8 +15,7 @@ var object = [
     place: "Riviera State",
     twitter: "Twitter, Inc",
     description: "795 Folsom Ave, Suite 600 San Francisco, CA 94107",
-    Telephon: "(123) 456-7890",
-    delete: "Delet Button"
+    Telephon: "(123) 456-7890"
   },
   {
     img: "imgs/monica-smith.jpg",
@@ -26,8 +24,7 @@ var object = [
     place: "Riviera State",
     twitter: "Twitter, Inc",
     description: "795 Folsom Ave, Suite 600 San Francisco, CA 94107",
-    Telephon: "(123) 456-7890",
-    delete: "Delet Button"
+    Telephon: "(123) 456-7890"
   },
   {
     img: "imgs/michael-zimber.jpg",
@@ -36,8 +33,7 @@ var object = [
     place: "Riviera State",
     twitter: "Twitter, Inc",
     description: "795 Folsom Ave, Suite 600 San Francisco, CA 94107",
-    Telephon: "(123) 456-7890",
-    delete: "Delet Button"
+    Telephon: "(123) 456-7890"
   },
   {
     img: "imgs/sandra-smith.jpg",
@@ -46,8 +42,7 @@ var object = [
     place: "Riviera State",
     twitter: "Twitter, Inc",
     description: "795 Folsom Ave, Suite 600 San Francisco, CA 94107",
-    Telephon: "(123) 456-7890",
-    delete: "Delet Button"
+    Telephon: "(123) 456-7890"
   },
   {
     img: "imgs/janeth-carton.jpg",
@@ -56,8 +51,7 @@ var object = [
     place: "Riviera State",
     twitter: "Twitter, Inc",
     description: "795 Folsom Ave, Suite 600 San Francisco, CA 94107",
-    Telephon: "(123) 456-7890",
-    delete: "Delet Button"
+    Telephon: "(123) 456-7890"
   },
   {
     img: "imgs/alex-jonathan.jpg",
@@ -66,8 +60,7 @@ var object = [
     place: "Riviera State",
     twitter: "Twitter, Inc",
     description: "795 Folsom Ave, Suite 600 San Francisco, CA 94107",
-    Telephon: "(123) 456-7890",
-    delete: "Delet Button"
+    Telephon: "(123) 456-7890"
   },
   {
     img: "imgs/john-smith.jpg",
@@ -76,7 +69,6 @@ var object = [
     place: "Riviera State",
     twitter: "Twitter, Inc",
     description: "795 Folsom Ave, Suite 600 San Francisco, CA 94107",
-    Telephon: "(123) 456-7890",
-    delete: "Delet Button"
+    Telephon: "(123) 456-7890"
   }
 ];

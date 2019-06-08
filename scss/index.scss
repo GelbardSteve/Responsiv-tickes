@@ -34,7 +34,7 @@ body {
     padding: 26px 0;
   }
   & .description {
-    width: 101%
+    width: 101%;
   }
 }
 
@@ -68,6 +68,31 @@ body {
 .addtext {
   display: flex;
   flex-direction: column;
+}
+
+.addSection {
+  flex-direction: column;
+  align-items: center;
+  & select, input {
+    margin: 2px;
+    border: 1px solid white;
+    border-radius: 25px;
+    width: 50%;
+  }
+  & button {
+    padding: 15px;
+    background: white;
+    color: black;
+    border: none;
+  }
+}
+
+.addNewUser {
+  display: flex !important;
+  justify-content: center !important; 
+  font-size: 61px;
+  margin: 5px;
+  color: white;
 }
 
 @media only screen and (min-width: 1350px) {

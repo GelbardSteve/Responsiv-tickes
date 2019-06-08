@@ -1,16 +1,43 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" type="text/css" href="scss/index.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    />
     <title>Document</title>
   </head>
   <body>
-    <section class="sectionContainer"></section>
+    <section class="sContainer">
+      <div class="sectionContainer"></div>
+      <i class='fas fa-plus-circle addNewUser'></i>
+
+      <div class="addSection">
+        <select id="ddlViewBy">
+          <option value="1">imgs/john-smith.jpg</option>
+          <option value="2">imgs/alex-jonathan.jpg</option>
+          <option value="3">imgs/monica-smith.jpg</option>
+          <option value="4">imgs/michael-zimber.jpg</option>
+          <option value="5">imgs/sandra-smith.jpg</option>
+          <option value="6">imgs/janeth-carton.jpg</option>
+        </select>
+        <input placeholder="addPosition" class="addPosition" type="text" />
+        <input placeholder="addUName" class="addUName" type="text" />
+        <input placeholder="addPlace" class="addPlace" type="text" />
+        <input placeholder="addTwitter" class="addTwitter" type="text" />
+        <input
+          placeholder="addDescription"
+          class="addDescription"
+          type="text"
+        />
+        <input placeholder="addTelephon" class="addTelephon" type="text" />
+        <button type="button" class="addButton">Add New User</button>
+      </div>
+      
+    </section>
 
     <script src="userObject.js"></script>
     <script src="index.js"></script>
-    
-
-    
+    <script src="addButton.js"></script>
   </body>
 </html>
