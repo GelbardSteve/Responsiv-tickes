@@ -7,33 +7,28 @@ addButton.addEventListener("click", e => {
 });
 
 function sectionButton() {
-  //Insert containerBorder into mainContainer
+  //Insert userSection into sectionContainer
   let userSection = document.createElement("div");
   userSection.className = "userSection";
   sectionContainer.appendChild(userSection);
 
-  //Insert secondContainer into containerBorder
   let userDetails = document.createElement("div");
   userDetails.className = "user-Details";
   userSection.appendChild(userDetails);
 
-  //Insert additinalLogo into secondContainer
   let figure = document.createElement("figure");
   userDetails.appendChild(figure);
 
-  //Insert paragraph into additinalLogo
   let image = document.createElement("img");
   image.src = e.options[e.selectedIndex].text;
   figure.appendChild(image);
 
-  //Insert mainLogo into secondContainer
   let figcaption = document.createElement("figcaption");
   figcaption.className = "userPosition";
   figcaption.textContent = addPosition.value;
   figure.appendChild(figcaption);
   addPosition.value = "";
 
-  //Insert Logo into the mainLogo
   let userDetail = document.createElement("div");
   userDetail.className = "userDetail";
   userDetails.appendChild(userDetail);
