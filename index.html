@@ -10,9 +10,10 @@
   <body>
     <section class="sContainer">
       <div class="sectionContainer"></div>
-      <i class='fas fa-plus-circle addNewUser'></i>
+      <i class="fas fa-plus-circle addNewUser"></i>
 
       <div class="addSection">
+        <label>Choose image</label>
         <select id="ddlViewBy">
           <option value="1">imgs/john-smith.jpg</option>
           <option value="2">imgs/alex-jonathan.jpg</option>
@@ -21,19 +22,36 @@
           <option value="5">imgs/sandra-smith.jpg</option>
           <option value="6">imgs/janeth-carton.jpg</option>
         </select>
+        <br />
+
+        <label>Insert Position</label>
         <input placeholder="addPosition" class="addPosition" type="text" />
+
+        <br />
+        <label>Insert Name</label>
         <input placeholder="addUName" class="addUName" type="text" />
+
+        <br />
+        <label>Insert Place</label>
         <input placeholder="addPlace" class="addPlace" type="text" />
+
+        <br />
+        <label>Insert Twitter</label>
         <input placeholder="addTwitter" class="addTwitter" type="text" />
+
+        <br />
+        <label>Insert Description</label>
         <input
           placeholder="addDescription"
           class="addDescription"
           type="text"
         />
+        
+        <br />
+        <label>Insert Telephon</label>
         <input placeholder="addTelephon" class="addTelephon" type="text" />
         <button type="button" class="addButton">Add New User</button>
       </div>
-
     </section>
 
     <script src="userObject.js"></script>
