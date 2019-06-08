@@ -9,8 +9,7 @@ for (let i = 0; i < object.length; i++) {
   message += "<div class='user-details'>";
   message += "<figure>";
   message += "<img src=" + users.img + ">";
-  message +=
-    "<figcaption class='userPosition'>" + users.position + "</figcaption>";
+  message += "<figcaption class='userPosition'>" + users.position + "</figcaption>";
   message += "</figure>";
   message += "<div class='userDetail'>";
   message += "<h3>" + users.name + "</h3>";
@@ -20,8 +19,7 @@ for (let i = 0; i < object.length; i++) {
   message += "<p>" + users.Telephon + "</p>";
   message += "</div>";
   message += "</div>";
-  message +=
-    "<div class='editbuttons'><i class='editbutton far fa-edit'></i><i class='deletebutton fas fa-trash'></i></div>";
+  message += "<div class='editbuttons'><i class='editbutton far fa-edit'></i><i class='deletebutton fas fa-trash'></i></div>";
   message += "</div>";
   message += "</div>";
 }
