@@ -73,11 +73,21 @@ body {
 .addSection {
   flex-direction: column;
   align-items: center;
-  & select, input {
+  position: absolute;
+  border-radius: 25px;
+  top: 0;
+  background: #0e1a31;
+  opacity: 0.9;
+  padding: 15px;
+  right: 20%;
+  width: 59%;
+  & select,
+  input {
     margin: 2px;
     border: 1px solid white;
     border-radius: 25px;
     width: 50%;
+    padding: 8px;
   }
   & button {
     padding: 15px;
@@ -85,14 +95,26 @@ body {
     color: black;
     border: none;
   }
+  & label {
+    background: black;
+    padding: 10px;
+    border-radius: 15px;
+    color: white;
+    padding-bottom: 5px;
+  }
 }
 
 .addNewUser {
   display: flex !important;
-  justify-content: center !important; 
+  justify-content: center !important;
   font-size: 61px;
   margin: 5px;
   color: white;
+}
+
+.addButton,
+.addNewUser {
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 1350px) {
