@@ -87,11 +87,10 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  padding: 5px;
 }
 
 .editbuttons i {
-  padding: 5px;
+  padding: 3px;
 }
 
 .fa-map-marker-alt {
