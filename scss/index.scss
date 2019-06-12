@@ -104,19 +104,18 @@ body {
   }
 }
 
-.addNewUser {
-  display: flex !important;
-  justify-content: center !important;
+.fa-plus-circle {
+  display: block !important;
   font-size: 61px;
-  margin: 5px;
+  margin: 0 auto;
   color: white;
+  width: 20px;
 }
 
 .addButton,
 .addNewUser {
   cursor: pointer;
 }
-
 @media only screen and (min-width: 1350px) {
   .userSection .description {
     width: 188px;

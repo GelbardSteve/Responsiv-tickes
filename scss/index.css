@@ -150,16 +150,12 @@ body {
   padding-bottom: 5px;
 }
 
-.addNewUser {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-  -webkit-box-pack: center !important;
-      -ms-flex-pack: center !important;
-          justify-content: center !important;
+.fa-plus-circle {
+  display: block !important;
   font-size: 61px;
-  margin: 5px;
+  margin: 0 auto;
   color: white;
+  width: 20px;
 }
 
 .addButton,
