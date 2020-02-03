@@ -55,8 +55,9 @@ body {
   cursor: pointer;
   display: flex;
   align-items: flex-end;
+  padding: 6px;
   & i {
-    padding: px;
+    padding: 1px;
   }
 }
 
@@ -94,13 +95,6 @@ body {
     color: black;
     border: none;
     float: right;
-  }
-  & label {
-    background: black;
-    padding: 10px;
-    border-radius: 15px;
-    color: white;
-    padding-bottom: 5px;
   }
 }
 

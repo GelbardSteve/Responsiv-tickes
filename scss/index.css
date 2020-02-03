@@ -87,10 +87,11 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  padding: 6px;
 }
 
 .editbuttons i {
-  padding: px;
+  padding: 1px;
 }
 
 .fa-map-marker-alt {
@@ -138,14 +139,6 @@ body {
   color: black;
   border: none;
   float: right;
-}
-
-.user-add-form label {
-  background: black;
-  padding: 10px;
-  border-radius: 15px;
-  color: white;
-  padding-bottom: 5px;
 }
 
 .fa-plus-circle {
