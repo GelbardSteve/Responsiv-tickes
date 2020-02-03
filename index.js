@@ -1,41 +1,61 @@
-var message = "";
-var users;
-
-var output = document.querySelector(".sectionContainer");
-
-for (let i = 0; i < object.length; i++) {
-  users = object[i];
-  message += "<div class='userSection'>";
-  message += "<div class='user-details'>";
-  message += "<figure>";
-  message += "<img src=" + users.img + ">";
-  message += "<figcaption class='userPosition'>" + users.position + "</figcaption>";
-  message += "</figure>";
-  message += "<div class='userDetail'>";
-  message += "<h3>" + users.name + "</h3>";
-  message += "<div><i class='fas fa-map-marker-alt'></i><span>" + users.place + "</span></div>";
-  message += "<p><b>" + users.twitter + "</b></p>";
-  message += "<p class='description'>" + users.description + "</p>";
-  message += "<p>" + users.Telephon + "</p>";
-  message += "</div>";
-  message += "</div>";
-  message += "<div class='editbuttons'><i class='editbutton far fa-edit'></i><i class='deletebutton fas fa-trash'></i></div>";
-  message += "</div>";
-  message += "</div>";
+function user_object() {
+  let message = "";
+  object.forEach(users => {
+    message += `
+    <div class='userSection'>
+      <div class='user-details'>
+        <figure>
+          <img src=${users.img}>
+          <figcaption class='userPosition'>${users.position}</figcaption>
+        </figure>
+        <div class='userDetail'>
+          <h3>${users.name}</h3>
+        <div>
+          <i class='fas fa-map-marker-alt'></i>
+          <span>
+            ${users.place}
+          </span>
+        </div>
+        <p><b>${users.twitter}</b></p>
+        <p class='description'>${users.description}</p>
+        <p>${users.Telephon}</p>
+     </div>
+     </div>
+     <div class='editbuttons'>
+     <i class='editbutton far fa-edit'></i><i class='deletebutton fas fa-trash'></i></div>
+     </div>
+    </div>`;
+  });
+  output.innerHTML = message;
 }
-output.innerHTML = message;
+user_object();
+
+add_user.addEventListener("click", () => {
+  let new_user = {
+    img: user_img.options[user_img.selectedIndex].text,
+    position: user_position.value,
+    name: user_name.value,
+    place: user_place.value,
+    twitter: user_twitter.value,
+    description: user_description.value,
+    Telephon: user_tel.value
+  };
+  object.push(new_user);
+  user_object();
+  clickButton();
+});
 
 function clickButton() {
-const deleteButton = document.querySelectorAll(".deletebutton");
-const editButton = document.querySelectorAll(".editbutton");
+  const deleteButton = document.querySelectorAll(".deletebutton");
+  const editButton = document.querySelectorAll(".editbutton");
 
-//Will delete the section
-  deleteButton.forEach(x =>
+  //Will delete the section
+  deleteButton.forEach((x, i) =>
     x.addEventListener("click", e => {
       if (e.target.className == "deletebutton" || "fa-trash") {
-        let buttonP = event.target.parentNode.parentNode;
-        let Div = buttonP.parentNode;
-        Div.removeChild(buttonP);
+        object.splice(i, 1);
+        user_object();
+        clickButton();
       }
     })
   );
@@ -51,3 +71,13 @@ const editButton = document.querySelectorAll(".editbutton");
   );
 }
 clickButton();
+
+
+add_form_user.style.display = 'none';
+add_form.addEventListener('click', () => {
+  add_form_user.style.display = '';
+})
+
+add_new_user.addEventListener('click', () => {
+  add_form_user.style.display = 'none';
+})

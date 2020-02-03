@@ -8,55 +8,31 @@
     <title>Document</title>
   </head>
   <body>
-    <section class="sContainer">
-      <div class="sectionContainer"></div>
-      <i class="fas fa-plus-circle addNewUser"></i>
+    <div class="sectionContainer"></div>
 
-      <div class="addSection">
-        <label>Choose image</label>
-        <select id="ddlViewBy">
-          <option value="1">imgs/john-smith.jpg</option>
-          <option value="2">imgs/alex-jonathan.jpg</option>
-          <option value="3">imgs/monica-smith.jpg</option>
-          <option value="4">imgs/michael-zimber.jpg</option>
-          <option value="5">imgs/sandra-smith.jpg</option>
-          <option value="6">imgs/janeth-carton.jpg</option>
-        </select>
-        <br />
+    <div class="user-add-form" id="add-form-user">
+      <select id="user-img">
+        <option value="1">imgs/john-smith.jpg</option>
+        <option value="2">imgs/alex-jonathan.jpg</option>
+        <option value="3">imgs/monica-smith.jpg</option>
+        <option value="4">imgs/michael-zimber.jpg</option>
+        <option value="5">imgs/sandra-smith.jpg</option>
+        <option value="6">imgs/janeth-carton.jpg</option>
+      </select>
+      <input type="text" id="user-position" placeholder="User Position" />
+      <input type="text" id="user-name" placeholder="User Name" />
+      <input type="text" id="user-place" placeholder="User Place" />
+      <input type="text" id="user-twitter" placeholder="User Twitter" />
+      <input type="text" id="user-description" placeholder="User Description" />
+      <input type="tel" id="user-tel" placeholder="User Tel" />
 
-        <label>Insert Position</label>
-        <input placeholder="addPosition" class="addPosition" type="text" />
+      <button id="addNewUser">Add New User</button>
+    </div>
 
-        <br />
-        <label>Insert Name</label>
-        <input placeholder="addUName" class="addUName" type="text" />
+    <i class="fas fa-plus-circle" id="add-form"></i>
 
-        <br />
-        <label>Insert Place</label>
-        <input placeholder="addPlace" class="addPlace" type="text" />
-
-        <br />
-        <label>Insert Twitter</label>
-        <input placeholder="addTwitter" class="addTwitter" type="text" />
-
-        <br />
-        <label>Insert Description</label>
-        <input
-          placeholder="addDescription"
-          class="addDescription"
-          type="text"
-        />
-
-        <br />
-        <label>Insert Telephon</label>
-        <input placeholder="addTelephon" class="addTelephon" type="text" />
-        <button type="button" class="addButton">Add New User</button>
-      </div>
-    </section>
-
+    <script src="getAllSelectors.js"></script>
     <script src="userObject.js"></script>
     <script src="index.js"></script>
-    <script src="getclasses.js"></script>
-    <script src="addButton.js"></script>
   </body>
 </html>

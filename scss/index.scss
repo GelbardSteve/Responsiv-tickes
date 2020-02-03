@@ -69,30 +69,31 @@ body {
   flex-direction: column;
 }
 
-.addSection {
+.user-add-form {
   flex-direction: column;
-  align-items: center;
   position: absolute;
+  top: 25;
   border-radius: 25px;
   top: 0;
   background: #0e1a31;
-  opacity: 0.9;
   padding: 15px;
   right: 20%;
   width: 59%;
   & select,
   input {
     margin: 2px;
+    padding: 12px;
+    font-size: 25px;
     border: 1px solid white;
-    border-radius: 25px;
+    border-radius: 15px;
     width: 50%;
-    padding: 8px;
   }
   & button {
     padding: 15px;
     background: white;
     color: black;
     border: none;
+    float: right;
   }
   & label {
     background: black;
