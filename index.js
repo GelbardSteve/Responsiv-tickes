@@ -10,20 +10,20 @@ function user_object() {
         </figure>
         <div class='userDetail'>
           <h3>${users.name}</h3>
-        <div>
-          <i class='fas fa-map-marker-alt'></i>
-          <span>
-            ${users.place}
-          </span>
+          <div>
+            <i class='fas fa-map-marker-alt'></i>
+            <span>
+              ${users.place}
+            </span>
+          </div>
+          <p><b>${users.twitter}</b></p>
+          <p class='description'>${users.description}</p>
+          <p>${users.Telephon}</p>
         </div>
-        <p><b>${users.twitter}</b></p>
-        <p class='description'>${users.description}</p>
-        <p>${users.Telephon}</p>
-     </div>
-     </div>
-     <div class='editbuttons'>
-     <i class='editbutton far fa-edit'></i><i class='deletebutton fas fa-trash'></i></div>
-     </div>
+      </div>
+      <div class='editbuttons'>
+      <i class='editbutton far fa-edit'></i><i class='deletebutton fas fa-trash'></i></div>
+      </div>
     </div>`;
   });
   output.innerHTML = message;
@@ -72,12 +72,11 @@ function clickButton() {
 }
 clickButton();
 
+add_form_user.style.display = "none";
+add_form.addEventListener("click", () => {
+  add_form_user.style.display = "";
+});
 
-add_form_user.style.display = 'none';
-add_form.addEventListener('click', () => {
-  add_form_user.style.display = '';
-})
-
-add_new_user.addEventListener('click', () => {
-  add_form_user.style.display = 'none';
-})
+add_new_user.addEventListener("click", () => {
+  add_form_user.style.display = "none";
+});
